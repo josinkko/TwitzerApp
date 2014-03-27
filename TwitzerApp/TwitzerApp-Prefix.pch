@@ -14,3 +14,9 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#define TWITZER_TIMELINE_URL @"http://176.58.126.236/"
+
+#define FONT_SIZE 17.0f
+#define CELL_CONTENT_WIDTH 320.0f
+#define CELL_CONTENT_MARGIN 10.0f
