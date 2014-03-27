@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99C4DD8218E44D2B00BF184C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C4DD8118E44D2B00BF184C /* Foundation.framework */; };
+		99C4DD8418E44D2B00BF184C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C4DD8318E44D2B00BF184C /* CoreGraphics.framework */; };
+		99C4DD8618E44D2B00BF184C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C4DD8518E44D2B00BF184C /* UIKit.framework */; };
+		99C4DD8C18E44D2B00BF184C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99C4DD8A18E44D2B00BF184C /* InfoPlist.strings */; };
+		99C4DD8E18E44D2B00BF184C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C4DD8D18E44D2B00BF184C /* main.m */; };
+		99C4DD9218E44D2B00BF184C /* TAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C4DD9118E44D2B00BF184C /* TAAppDelegate.m */; };
+		99C4DD9418E44D2B00BF184C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C4DD9318E44D2B00BF184C /* Images.xcassets */; };
+		99C4DD9B18E44D2B00BF184C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C4DD9A18E44D2B00BF184C /* XCTest.framework */; };
+		99C4DD9C18E44D2B00BF184C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C4DD8118E44D2B00BF184C /* Foundation.framework */; };
+		99C4DD9D18E44D2B00BF184C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99C4DD8518E44D2B00BF184C /* UIKit.framework */; };
+		99C4DDA518E44D2C00BF184C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99C4DDA318E44D2C00BF184C /* InfoPlist.strings */; };
+		99C4DDA718E44D2C00BF184C /* TwitzerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C4DDA618E44D2C00BF184C /* TwitzerAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99C4DD9E18E44D2C00BF184C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99C4DD7618E44D2B00BF184C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99C4DD7D18E44D2B00BF184C;
+			remoteInfo = TwitzerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99C4DD7E18E44D2B00BF184C /* TwitzerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitzerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99C4DD8118E44D2B00BF184C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		99C4DD8318E44D2B00BF184C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		99C4DD8518E44D2B00BF184C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		99C4DD8918E44D2B00BF184C /* TwitzerApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitzerApp-Info.plist"; sourceTree = "<group>"; };
+		99C4DD8B18E44D2B00BF184C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99C4DD8D18E44D2B00BF184C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99C4DD8F18E44D2B00BF184C /* TwitzerApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitzerApp-Prefix.pch"; sourceTree = "<group>"; };
+		99C4DD9018E44D2B00BF184C /* TAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAAppDelegate.h; sourceTree = "<group>"; };
+		99C4DD9118E44D2B00BF184C /* TAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAAppDelegate.m; sourceTree = "<group>"; };
+		99C4DD9318E44D2B00BF184C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		99C4DD9918E44D2B00BF184C /* TwitzerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitzerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99C4DD9A18E44D2B00BF184C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		99C4DDA218E44D2C00BF184C /* TwitzerAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitzerAppTests-Info.plist"; sourceTree = "<group>"; };
+		99C4DDA418E44D2C00BF184C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99C4DDA618E44D2C00BF184C /* TwitzerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitzerAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99C4DD7B18E44D2B00BF184C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C4DD8418E44D2B00BF184C /* CoreGraphics.framework in Frameworks */,
+				99C4DD8618E44D2B00BF184C /* UIKit.framework in Frameworks */,
+				99C4DD8218E44D2B00BF184C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99C4DD9618E44D2B00BF184C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C4DD9B18E44D2B00BF184C /* XCTest.framework in Frameworks */,
+				99C4DD9D18E44D2B00BF184C /* UIKit.framework in Frameworks */,
+				99C4DD9C18E44D2B00BF184C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99C4DD7518E44D2B00BF184C = {
+			isa = PBXGroup;
+			children = (
+				99C4DD8718E44D2B00BF184C /* TwitzerApp */,
+				99C4DDA018E44D2C00BF184C /* TwitzerAppTests */,
+				99C4DD8018E44D2B00BF184C /* Frameworks */,
+				99C4DD7F18E44D2B00BF184C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99C4DD7F18E44D2B00BF184C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99C4DD7E18E44D2B00BF184C /* TwitzerApp.app */,
+				99C4DD9918E44D2B00BF184C /* TwitzerAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99C4DD8018E44D2B00BF184C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99C4DD8118E44D2B00BF184C /* Foundation.framework */,
+				99C4DD8318E44D2B00BF184C /* CoreGraphics.framework */,
+				99C4DD8518E44D2B00BF184C /* UIKit.framework */,
+				99C4DD9A18E44D2B00BF184C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99C4DD8718E44D2B00BF184C /* TwitzerApp */ = {
+			isa = PBXGroup;
+			children = (
+				99C4DD9018E44D2B00BF184C /* TAAppDelegate.h */,
+				99C4DD9118E44D2B00BF184C /* TAAppDelegate.m */,
+				99C4DD9318E44D2B00BF184C /* Images.xcassets */,
+				99C4DD8818E44D2B00BF184C /* Supporting Files */,
+			);
+			path = TwitzerApp;
+			sourceTree = "<group>";
+		};
+		99C4DD8818E44D2B00BF184C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99C4DD8918E44D2B00BF184C /* TwitzerApp-Info.plist */,
+				99C4DD8A18E44D2B00BF184C /* InfoPlist.strings */,
+				99C4DD8D18E44D2B00BF184C /* main.m */,
+				99C4DD8F18E44D2B00BF184C /* TwitzerApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99C4DDA018E44D2C00BF184C /* TwitzerAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				99C4DDA618E44D2C00BF184C /* TwitzerAppTests.m */,
+				99C4DDA118E44D2C00BF184C /* Supporting Files */,
+			);
+			path = TwitzerAppTests;
+			sourceTree = "<group>";
+		};
+		99C4DDA118E44D2C00BF184C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99C4DDA218E44D2C00BF184C /* TwitzerAppTests-Info.plist */,
+				99C4DDA318E44D2C00BF184C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99C4DD7D18E44D2B00BF184C /* TwitzerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99C4DDAA18E44D2C00BF184C /* Build configuration list for PBXNativeTarget "TwitzerApp" */;
+			buildPhases = (
+				99C4DD7A18E44D2B00BF184C /* Sources */,
+				99C4DD7B18E44D2B00BF184C /* Frameworks */,
+				99C4DD7C18E44D2B00BF184C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitzerApp;
+			productName = TwitzerApp;
+			productReference = 99C4DD7E18E44D2B00BF184C /* TwitzerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99C4DD9818E44D2B00BF184C /* TwitzerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99C4DDAD18E44D2C00BF184C /* Build configuration list for PBXNativeTarget "TwitzerAppTests" */;
+			buildPhases = (
+				99C4DD9518E44D2B00BF184C /* Sources */,
+				99C4DD9618E44D2B00BF184C /* Frameworks */,
+				99C4DD9718E44D2B00BF184C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99C4DD9F18E44D2C00BF184C /* PBXTargetDependency */,
+			);
+			name = TwitzerAppTests;
+			productName = TwitzerAppTests;
+			productReference = 99C4DD9918E44D2B00BF184C /* TwitzerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99C4DD7618E44D2B00BF184C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TA;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Johanna Sinkkonen";
+				TargetAttributes = {
+					99C4DD9818E44D2B00BF184C = {
+						TestTargetID = 99C4DD7D18E44D2B00BF184C;
+					};
+				};
+			};
+			buildConfigurationList = 99C4DD7918E44D2B00BF184C /* Build configuration list for PBXProject "TwitzerApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 99C4DD7518E44D2B00BF184C;
+			productRefGroup = 99C4DD7F18E44D2B00BF184C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99C4DD7D18E44D2B00BF184C /* TwitzerApp */,
+				99C4DD9818E44D2B00BF184C /* TwitzerAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99C4DD7C18E44D2B00BF184C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C4DD8C18E44D2B00BF184C /* InfoPlist.strings in Resources */,
+				99C4DD9418E44D2B00BF184C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99C4DD9718E44D2B00BF184C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C4DDA518E44D2C00BF184C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99C4DD7A18E44D2B00BF184C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C4DD8E18E44D2B00BF184C /* main.m in Sources */,
+				99C4DD9218E44D2B00BF184C /* TAAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99C4DD9518E44D2B00BF184C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C4DDA718E44D2C00BF184C /* TwitzerAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99C4DD9F18E44D2C00BF184C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99C4DD7D18E44D2B00BF184C /* TwitzerApp */;
+			targetProxy = 99C4DD9E18E44D2C00BF184C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99C4DD8A18E44D2B00BF184C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99C4DD8B18E44D2B00BF184C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		99C4DDA318E44D2C00BF184C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99C4DDA418E44D2C00BF184C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99C4DDA818E44D2C00BF184C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		99C4DDA918E44D2C00BF184C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99C4DDAB18E44D2C00BF184C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitzerApp/TwitzerApp-Prefix.pch";
+				INFOPLIST_FILE = "TwitzerApp/TwitzerApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		99C4DDAC18E44D2C00BF184C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitzerApp/TwitzerApp-Prefix.pch";
+				INFOPLIST_FILE = "TwitzerApp/TwitzerApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		99C4DDAE18E44D2C00BF184C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TwitzerApp.app/TwitzerApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitzerApp/TwitzerApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TwitzerAppTests/TwitzerAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		99C4DDAF18E44D2C00BF184C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TwitzerApp.app/TwitzerApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TwitzerApp/TwitzerApp-Prefix.pch";
+				INFOPLIST_FILE = "TwitzerAppTests/TwitzerAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99C4DD7918E44D2B00BF184C /* Build configuration list for PBXProject "TwitzerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99C4DDA818E44D2C00BF184C /* Debug */,
+				99C4DDA918E44D2C00BF184C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99C4DDAA18E44D2C00BF184C /* Build configuration list for PBXNativeTarget "TwitzerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99C4DDAB18E44D2C00BF184C /* Debug */,
+				99C4DDAC18E44D2C00BF184C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99C4DDAD18E44D2C00BF184C /* Build configuration list for PBXNativeTarget "TwitzerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99C4DDAE18E44D2C00BF184C /* Debug */,
+				99C4DDAF18E44D2C00BF184C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99C4DD7618E44D2B00BF184C /* Project object */;
+}
