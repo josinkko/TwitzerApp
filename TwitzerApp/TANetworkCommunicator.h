@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol TANetworkCommunicatorDelegate
-- (void)retriveFromNetworkCommunicator:(NSArray*)json;
+- (void)retriveFromNetworkCommunicator:(NSArray*)foundTweets;
 @end
 
 @interface TANetworkCommunicator : NSObject

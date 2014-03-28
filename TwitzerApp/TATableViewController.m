@@ -28,9 +28,9 @@
     [self populateTableView];
 }
 
-- (void)retriveFromNetworkCommunicator:(NSArray *)json
+- (void)retriveFromNetworkCommunicator:(NSArray *)foundTweets
 {
-    tweets = json;
+    tweets = foundTweets;
     [self.tableView reloadData];
     [activityIndicator stopAnimating];
 }

@@ -9,7 +9,9 @@
  Notes: This class downloads the JSON from twitzerFeed and parses into TATweet-objects.
  [self createFeedFromJSON:] - checks for exception and does the parsing.
  TweetDate is parsed with NSDateFormatter in [self formatDate:];
- 
+ This is also a protocol by which the delegate who confirms to it will get access to
+ the parsed array of tweets via the [self retriveFromNetworkCommunicator:] method, which is called
+ retrieving and parsing.
  */
 
 #import "TANetworkCommunicator.h"
