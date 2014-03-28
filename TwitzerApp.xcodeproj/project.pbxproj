@@ -22,9 +22,7 @@
 		99C4DDB418E44D8E00BF184C /* TANetworkCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C4DDB118E44D8E00BF184C /* TANetworkCommunicator.m */; };
 		99C4DDB518E44D8E00BF184C /* TATweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C4DDB318E44D8E00BF184C /* TATweet.m */; };
 		99C4DDBA18E44E3600BF184C /* TATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C4DDB918E44E3600BF184C /* TATableViewController.m */; };
-		99C4DDBE18E45F2A00BF184C /* TACustomFrontTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C4DDBD18E45F2A00BF184C /* TACustomFrontTableViewCell.m */; };
-		99C4DDC218E4832000BF184C /* TACustomBackTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C4DDC118E4832000BF184C /* TACustomBackTableViewCell.m */; };
-		99C4DDC418E4863900BF184C /* tweetcell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C4DDC318E4863900BF184C /* tweetcell@2x.png */; };
+		99C4DDC218E4832000BF184C /* TACustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C4DDC118E4832000BF184C /* TACustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,11 +58,8 @@
 		99C4DDB318E44D8E00BF184C /* TATweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATweet.m; sourceTree = "<group>"; };
 		99C4DDB818E44E3600BF184C /* TATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TATableViewController.h; sourceTree = "<group>"; };
 		99C4DDB918E44E3600BF184C /* TATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TATableViewController.m; sourceTree = "<group>"; };
-		99C4DDBC18E45F2A00BF184C /* TACustomFrontTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACustomFrontTableViewCell.h; sourceTree = "<group>"; };
-		99C4DDBD18E45F2A00BF184C /* TACustomFrontTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACustomFrontTableViewCell.m; sourceTree = "<group>"; };
-		99C4DDC018E4832000BF184C /* TACustomBackTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACustomBackTableViewCell.h; sourceTree = "<group>"; };
-		99C4DDC118E4832000BF184C /* TACustomBackTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACustomBackTableViewCell.m; sourceTree = "<group>"; };
-		99C4DDC318E4863900BF184C /* tweetcell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tweetcell@2x.png"; sourceTree = "<group>"; };
+		99C4DDC018E4832000BF184C /* TACustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TACustomTableViewCell.h; sourceTree = "<group>"; };
+		99C4DDC118E4832000BF184C /* TACustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TACustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +133,6 @@
 		99C4DD8818E44D2B00BF184C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				99C4DDC318E4863900BF184C /* tweetcell@2x.png */,
 				99C4DD8918E44D2B00BF184C /* TwitzerApp-Info.plist */,
 				99C4DD8A18E44D2B00BF184C /* InfoPlist.strings */,
 				99C4DD8D18E44D2B00BF184C /* main.m */,
@@ -196,10 +190,8 @@
 		99C4DDBF18E482B800BF184C /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				99C4DDBC18E45F2A00BF184C /* TACustomFrontTableViewCell.h */,
-				99C4DDBD18E45F2A00BF184C /* TACustomFrontTableViewCell.m */,
-				99C4DDC018E4832000BF184C /* TACustomBackTableViewCell.h */,
-				99C4DDC118E4832000BF184C /* TACustomBackTableViewCell.m */,
+				99C4DDC018E4832000BF184C /* TACustomTableViewCell.h */,
+				99C4DDC118E4832000BF184C /* TACustomTableViewCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -281,7 +273,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				99C4DD8C18E44D2B00BF184C /* InfoPlist.strings in Resources */,
-				99C4DDC418E4863900BF184C /* tweetcell@2x.png in Resources */,
 				99C4DD9418E44D2B00BF184C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,9 +294,8 @@
 			files = (
 				99C4DDB518E44D8E00BF184C /* TATweet.m in Sources */,
 				99C4DDB418E44D8E00BF184C /* TANetworkCommunicator.m in Sources */,
-				99C4DDC218E4832000BF184C /* TACustomBackTableViewCell.m in Sources */,
+				99C4DDC218E4832000BF184C /* TACustomTableViewCell.m in Sources */,
 				99C4DD8E18E44D2B00BF184C /* main.m in Sources */,
-				99C4DDBE18E45F2A00BF184C /* TACustomFrontTableViewCell.m in Sources */,
 				99C4DD9218E44D2B00BF184C /* TAAppDelegate.m in Sources */,
 				99C4DDBA18E44E3600BF184C /* TATableViewController.m in Sources */,
 			);

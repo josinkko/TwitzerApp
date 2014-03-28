@@ -1,5 +1,5 @@
 //
-//  TACustomBackTableViewCell.h
+//  TACustomTableViewCell.h
 //  TwitzerApp
 //
 //  Created by Johanna Sinkkonen on 27/03/14.
@@ -10,8 +10,9 @@
 
 @class TATweet;
 
-@interface TACustomBackTableViewCell : UITableViewCell
+@interface TACustomTableViewCell : UITableViewCell
 
 @property (nonatomic) TATweet *tweetForCell;
+@property (nonatomic) UILabel *statusLabel;
 
 @end

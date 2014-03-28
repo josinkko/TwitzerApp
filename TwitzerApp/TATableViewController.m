@@ -9,8 +9,7 @@
 #import "TATableViewController.h"
 #import "TANetworkCommunicator.h"
 #import "TATweet.h"
-#import "TACustomFrontTableViewCell.h"
-#import "TACustomBackTableViewCell.h"
+#import "TACustomTableViewCell.h"
 
 @implementation TATableViewController
 {
@@ -30,6 +29,8 @@
 - (void)styleTableView
 {
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    self.tableView.backgroundColor = [UIColor colorWithRed:(81/255.0) green:(161/255.0) blue:(202/255.0) alpha:1.0];
+    self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0);
 }
 
 - (void)populateTableView
@@ -54,14 +55,12 @@
         
         CGSize dynamicCellSize = [tweet.statusMessage boundingRectWithSize:CGSizeMake(300, MAXFLOAT)
                                                                      options:NSStringDrawingUsesLineFragmentOrigin
-                                                                  attributes:@{
-                                                                               NSFontAttributeName : fontForLabel
-                                                                               }
+                                                                  attributes:@{NSFontAttributeName : fontForLabel}
                                                                      context:nil].size;
         
-        return dynamicCellSize.height + 72;
+        return dynamicCellSize.height + 77;
     }
-    return 44;
+    return 110;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -73,28 +72,32 @@
 {
     TATweet *currentTweet = [tweets objectAtIndex:indexPath.row];
     
-    static NSString *customFrontCellIdentifier = @"customFrontCell";
-    static NSString *customBackCellIdentifier = @"customBackCell";
+    static NSString *customCellIdentifier = @"customCell";
+
+    TACustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:customCellIdentifier];
     
-    id cell;
+    if(!cell) {
+        cell = [[TACustomTableViewCell alloc] init];
+    }
+    
+    cell.tweetForCell = currentTweet;
+    cell.statusLabel = [[UILabel alloc] init];
+    cell.statusLabel.font = [UIFont fontWithName:@"Georgia" size:18.0];
+    cell.statusLabel.textColor = [UIColor whiteColor];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.statusLabel.numberOfLines = 0;
     
     if (![indexPath isEqual:selectedIndex]) {
-        if(!cell) {
-            cell = [[TACustomFrontTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:customFrontCellIdentifier];
-        } else {
-            cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-        }
-        [(TACustomFrontTableViewCell*)cell setTweetForCell:currentTweet];
-        [(TACustomFrontTableViewCell*)cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+
+        cell.statusLabel.frame = CGRectMake(10, 60, 300, 55);
         
     } else if ([indexPath isEqual:selectedIndex]) {
-        if (!cell) {
-            cell = [[TACustomBackTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:customBackCellIdentifier];
-        } else {
-            cell  = [tableView dequeueReusableCellWithIdentifier:@"customCell"];
-        }
-        [(TACustomBackTableViewCell*)cell setTweetForCell:currentTweet];
-        [(TACustomBackTableViewCell*)cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        CGSize statusLabelDynamicSize = [currentTweet.statusMessage boundingRectWithSize:CGSizeMake(300, MAXFLOAT)
+                                                  options:NSStringDrawingUsesLineFragmentOrigin
+                                             attributes:@{ NSFontAttributeName : cell.statusLabel.font}
+                                                  context:nil].size;
+        
+        cell.statusLabel.frame = CGRectMake(10, 70, 300, statusLabelDynamicSize.height);
     }
     return cell;
 }
@@ -107,8 +110,10 @@
         if (selectedIndex) [indexes addObject:selectedIndex];
         selectedIndex = indexPath;
         [tableView reloadRowsAtIndexPaths:indexes withRowAnimation:UITableViewRowAnimationAutomatic];
+
     }
     return indexPath;
 }
+
 
 @end

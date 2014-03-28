@@ -1,5 +1,5 @@
 //
-//  TATwit.h
+//  TATweet.h
 //  TwitzerApp
 //
 //  Created by Johanna Sinkkonen on 27/03/14.

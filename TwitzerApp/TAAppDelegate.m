@@ -17,8 +17,6 @@
     TATableViewController *tableViewController = [[TATableViewController alloc] init];
     self.window.rootViewController = tableViewController;
     
-//    self.window.bounds = CGRectMake(0, -20, self.window.frame.size.width, self.window.frame.size.height);
-    
     [self.window makeKeyAndVisible];
     return YES;
 }
