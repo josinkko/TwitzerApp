@@ -91,7 +91,7 @@
         dateString = @"today";
     }  else {
         NSDateFormatter *weekdayFormatter = [[NSDateFormatter alloc] init];
-        NSArray *daysOfWeek = @[@"Sun", @"Mon", @"Tue", @"Wed", @"Thu", @"Fri", @"Sat"];
+        NSArray *daysOfWeek = @[@"", @"Sun", @"Mon", @"Tue", @"Wed", @"Thu", @"Fri", @"Sat"];
         [weekdayFormatter setDateFormat:@"e"];
         
         NSInteger weekdayNumber = (NSInteger)[[weekdayFormatter stringFromDate:tweetDate] integerValue];
