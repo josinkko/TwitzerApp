@@ -18,9 +18,6 @@
 #import "TATweet.h"
 
 @implementation TANetworkCommunicator
-//{
-//    id <NSObject, TANetworkCommunicatorDelegate> delegate;
-//}
 
 - (void)retrieveTweetsAsynchronousFromURL:(NSString*)url withParams:(NSArray*)params
 {

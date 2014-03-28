@@ -15,6 +15,7 @@
 @interface TANetworkCommunicator : NSObject
 
 @property (retain) id <NSObject, TANetworkCommunicatorDelegate> delegate;
+
 - (void)retrieveTweetsAsynchronousFromURL:(NSString*)url withParams:(NSArray*)params;
 
 @end
