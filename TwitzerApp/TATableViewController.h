@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TANetworkCommunicator.h"
 
-@interface TATableViewController : UITableViewController
+@interface TATableViewController : UITableViewController<TANetworkCommunicatorDelegate>
 
 @end

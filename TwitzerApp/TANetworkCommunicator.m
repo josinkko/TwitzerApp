@@ -16,8 +16,11 @@
 #import "TATweet.h"
 
 @implementation TANetworkCommunicator
+//{
+//    id <NSObject, TANetworkCommunicatorDelegate> delegate;
+//}
 
-- (NSArray*)retrieveTweetsSynchronousFromURL:(NSString*)url withParams:(NSArray*)params
+- (void)retrieveTweetsAsynchronousFromURL:(NSString*)url withParams:(NSArray*)params
 {
     NSMutableString *urlString = [NSMutableString stringWithString:url];
     for (NSString *param in params) {
@@ -25,14 +28,15 @@
     }
     
     NSURL *fetchURL = [NSURL URLWithString:urlString];
-    NSURLResponse *resp;
-    NSError *err;
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:fetchURL];
+    __block NSArray *json = [[NSArray alloc] init];
     
-    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:&resp error:&err];
-    NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&err];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+        NSArray *parsedJSON = [self createTweetsFromJSON:json];
+        [_delegate retriveFromNetworkCommunicator:parsedJSON];
 
-    return [self createTweetsFromJSON:json];
+    }];
 }
 
 - (NSArray*)createTweetsFromJSON:(NSArray*)jsonArray
@@ -62,8 +66,10 @@
         [tweets addObject:currentTweet];
         
     }
-    return [NSArray arrayWithArray:tweets];
+    NSArray *arrayOfTweets = [NSArray arrayWithArray:tweets];
+    return arrayOfTweets;
 }
+
 
 - (NSString*)formatDate:(NSDate*)tweetDate
 {
@@ -97,5 +103,7 @@
     }
     return dateString;
 }
+
+
 
 @end

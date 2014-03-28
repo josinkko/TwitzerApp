@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol TANetworkCommunicatorDelegate
+- (void)retriveFromNetworkCommunicator:(NSArray*)json;
+@end
+
 @interface TANetworkCommunicator : NSObject
 
-- (NSArray*)retrieveTweetsSynchronousFromURL:(NSString*)url withParams:(NSArray*)params;
+@property (retain) id <NSObject, TANetworkCommunicatorDelegate> delegate;
+- (void)retrieveTweetsAsynchronousFromURL:(NSString*)url withParams:(NSArray*)params;
 
 @end

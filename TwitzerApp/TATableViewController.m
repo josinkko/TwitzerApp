@@ -22,8 +22,17 @@
 - (void)viewDidLoad
 {
     networkCommunicator = [[TANetworkCommunicator alloc] init];
+    networkCommunicator.delegate = self;
+    
     [self styleTableView];
     [self populateTableView];
+}
+
+- (void)retriveFromNetworkCommunicator:(NSArray *)json
+{
+    tweets = json;
+    [self.tableView reloadData];
+    [activityIndicator stopAnimating];
 }
 
 - (void)styleTableView
@@ -39,12 +48,35 @@
     
     activityIndicator = [[UIActivityIndicatorView alloc]
                          initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-    activityIndicator.center = self.view.center;
-    [self.view addSubview:activityIndicator];
-    
+    activityIndicator.center = self.tableView.center;
+    [self.tableView addSubview:activityIndicator];
     [activityIndicator startAnimating];
-    tweets = [networkCommunicator retrieveTweetsSynchronousFromURL:TWITZER_TIMELINE_URL withParams:params];
-    [activityIndicator stopAnimating];
+    [networkCommunicator retrieveTweetsAsynchronousFromURL:TWITZER_TIMELINE_URL withParams:params];
+
+////    dispatch_sync(dispatch_get_main_queue(), ^{
+////        tweets = [networkCommunicator retrieveTweetsSynchronousFromURL:TWITZER_TIMELINE_URL withParams:params];
+////        [activityIndicator stopAnimating];
+////    });
+//    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//                    
+//        
+//        
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//
+//        });
+//    });
+//    
+////    dispatch_sync(dispatch_get_main_queue(), ^{
+//        [networkCommunicator retrieveTweetsAsynchronousFromURL:TWITZER_TIMELINE_URL withParams:params];
+//        [activityIndicator stopAnimating];
+//    });
+
+//
+//
+//    [activityIndicator startAnimating];
+//
+//    [activityIndicator stopAnimating];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
